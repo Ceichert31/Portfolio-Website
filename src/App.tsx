@@ -7,9 +7,16 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-      <b>Christopher Eichert</b>
+   <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christopher Eichert</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <b>Christopher Eichert</b>
     <p>Hello this is my website</p>
 
     <strong>Info</strong>
@@ -49,8 +56,11 @@ function App() {
     <a href="https://normalcreator5452.itch.io/final-light">Final Light</a>
     <br>
     <a href="https://pineapple3114.itch.io/deathscalator">Deathscalator</a>
-      </div>
-    </>
+
+
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
   )
 }
 
