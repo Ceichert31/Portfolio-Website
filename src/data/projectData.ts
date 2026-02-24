@@ -1,3 +1,5 @@
+//import graveDiggerImage from "././assets/GraveDigger.png";
+
 export interface ProjectLink {
   label: string;
   url: string;
@@ -105,20 +107,6 @@ export const projects: Project[] = [
     },
     {
       id: 7,
-      title: "Roachelles Motel",
-      images: [
-        "https://picsum.photos/800/500?random=7",
-        "https://picsum.photos/800/500?random=7.1"
-      ],
-      shortDescription: "A motel management game",
-      description: "Manage a quirky motel filled with unusual guests in this humorous simulation game. Keep your guests happy, manage resources, and deal with the unexpected.",
-      tags: ["Simulation", "Management", "Unity"],
-      links: [
-        { label: "Play on itch.io", url: "https://canik.itch.io/roachelles-motel" }
-      ]
-    },
-    {
-      id: 8,
       title: "Loopify",
       images: [
         "https://picsum.photos/800/500?random=8",
@@ -131,48 +119,6 @@ export const projects: Project[] = [
         { label: "Play on itch.io", url: "https://hoxfire.itch.io/loopify" }
       ]
     },
-    {
-      id: 9,
-      title: "Dungeon Dater",
-      images: [
-        "https://picsum.photos/800/500?random=9",
-        "https://picsum.photos/800/500?random=9.1"
-      ],
-      shortDescription: "A dating sim meets dungeon crawler",
-      description: "Romance and adventure collide in this unique blend of dating sim and dungeon exploration. Build relationships while battling monsters and collecting loot.",
-      tags: ["Dating Sim", "RPG", "Unity"],
-      links: [
-        { label: "Play on itch.io", url: "https://snerds.itch.io/dungeongardengame" }
-      ]
-    },
-    {
-      id: 10,
-      title: "Final Light",
-      images: [
-        "https://picsum.photos/800/500?random=10",
-        "https://picsum.photos/800/500?random=10.1"
-      ],
-      shortDescription: "An atmospheric adventure",
-      description: "Journey through a world of darkness seeking the final light in this atmospheric adventure game. Explore hauntingly beautiful environments and uncover the story of a dying world.",
-      tags: ["Adventure", "Atmospheric", "Unity"],
-      links: [
-        { label: "Play on itch.io", url: "https://normalcreator5452.itch.io/final-light" }
-      ]
-    },
-    {
-      id: 11,
-      title: "Deathscalator",
-      images: [
-        "https://picsum.photos/800/500?random=11",
-        "https://picsum.photos/800/500?random=11.1"
-      ],
-      shortDescription: "An escalating challenge game",
-      description: "Face increasingly difficult challenges in this fast-paced action game. Master the mechanics as difficulty ramps up exponentially in this score-chasing experience.",
-      tags: ["Action", "Arcade", "Game Jam"],
-      links: [
-        { label: "Play on itch.io", url: "https://pineapple3114.itch.io/deathscalator" }
-      ]
-    }
   ];
 
   export const allItems: Project[] = [...projects, ...games];
