@@ -76,7 +76,7 @@ function ProjectCard({ project }: { project: Project }) {
           <span className="project-card__thumb-label">Image</span>
         )}
         <div className="project-card__overlay">
-          <span>+</span>
+          <span></span>
         </div>
       </div>
       <div className="project-card__info">
