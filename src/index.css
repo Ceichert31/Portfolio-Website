@@ -4,7 +4,6 @@
   font-weight: 400;
   color-scheme: light dark;
   color: #DEF4C6;
-  background-color: #1B512D;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -22,8 +21,6 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
