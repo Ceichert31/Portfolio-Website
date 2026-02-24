@@ -1,4 +1,8 @@
-//import graveDiggerImage from "././assets/GraveDigger.png";
+import graveDiggerImage from "./../assets/GraveDigger.png";
+import modulingsImage from "./../assets/Modulings.png";
+import dwarvenFortuneImage from "./../assets/DwarvenFortune.png";
+import loopifyImage from "./../assets/Loopify.png";
+import belowDeckImage from "./../assets/BelowDeck.png";
 
 export interface ProjectLink {
   label: string;
@@ -53,8 +57,7 @@ export const projects: Project[] = [
       id: 3,
       title: "Modulings",
       images: [
-        "https://picsum.photos/800/500?random=3",
-        "https://picsum.photos/800/500?random=3.1"
+        modulingsImage
       ],
       shortDescription: "A modular puzzle game",
       description: "Modulings is an innovative puzzle game where players manipulate modular pieces to solve challenges. Features unique mechanics and engaging level design that progressively introduces new concepts.",
@@ -67,8 +70,7 @@ export const projects: Project[] = [
       id: 4,
       title: "Dwarven Fortune",
       images: [
-        "https://picsum.photos/800/500?random=4",
-        "https://picsum.photos/800/500?random=4.1"
+        dwarvenFortuneImage
       ],
       shortDescription: "A dwarven adventure game",
       description: "Embark on a dwarven quest for fortune in this exciting adventure game. Mine resources, battle enemies, and uncover treasures in procedurally generated dungeons.",
@@ -81,8 +83,7 @@ export const projects: Project[] = [
       id: 5,
       title: "Below Deck",
       images: [
-        "https://picsum.photos/800/500?random=5",
-        "https://picsum.photos/800/500?random=5.1"
+        belowDeckImage
       ],
       shortDescription: "A nautical mystery game",
       description: "Navigate the mysteries below deck in this atmospheric puzzle adventure. Uncover secrets and solve challenging puzzles in a beautifully crafted maritime setting.",
@@ -95,8 +96,7 @@ export const projects: Project[] = [
       id: 6,
       title: "Grave Digger",
       images: [
-        "https://picsum.photos/800/500?random=6",
-        "https://picsum.photos/800/500?random=6.1"
+        graveDiggerImage
       ],
       shortDescription: "A spooky digging game",
       description: "Dig through graveyards and uncover mysteries in this darkly humorous game. Balance risk and reward as you excavate treasures while avoiding supernatural encounters.",
@@ -109,8 +109,7 @@ export const projects: Project[] = [
       id: 7,
       title: "Loopify",
       images: [
-        "https://picsum.photos/800/500?random=8",
-        "https://picsum.photos/800/500?random=8.1"
+        loopifyImage
       ],
       shortDescription: "A time-loop puzzle game",
       description: "Master time loops to solve intricate puzzles in this mind-bending game. Learn from each iteration and use knowledge from previous loops to progress.",
