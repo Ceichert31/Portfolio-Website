@@ -136,10 +136,10 @@ function About() {
 
 function Contact() {
   const links = [
-    { label: "Email",     href: "mailto:you@email.com", value: "ceichert3114@gmail.com" },
-    { label: "LinkedIn",  href: "#", value: "linkedin.com/in/christophereichert/" },
-    { label: "GitHub", href: "#", value: "github.com/Ceichert31" },
-    { label: "itch.io", href: "#", value: "pineapple3114.itch.io/" },
+    { label: "Email",  href: "mailto:ceichert3114@gmail.com", value: "ceichert3114@gmail.com" },
+    { label: "LinkedIn", href: "https://linkedin.com/in/christophereichert/", value: "Christopher Eichert" },
+    { label: "GitHub", href: "https://github.com/Ceichert31/", value: "Ceichert31" },
+    { label: "itch.io", href: "https://pineapple3114.itch.io/", value: "Pineapple3114" },
   ];
 
   return (
