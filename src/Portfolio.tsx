@@ -3,7 +3,7 @@ import "./App.css";
 import { projects, games, type Project } from "././data/projectData.ts";
 import demoReel from "././assets/DayNightVisual.mp4";
 
-const NAV_LINKS = ["About", "Projects", "Resume", "Contact"];
+const NAV_LINKS = ["Projects", "About", "Contact", "Resume"];
 
 function NavBar({ activePage, setActivePage }: { activePage: string; setActivePage: (p: string) => void }) {
   const [scrolled, setScrolled] = useState(false);
