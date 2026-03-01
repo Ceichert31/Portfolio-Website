@@ -21,6 +21,10 @@ body {
   background: #111;
   color: #e8e8e8;
   min-height: 100vh;
+  --mobile: 320px;
+  --tablet: 768px;
+  --desktop: 1024px;
+  --wide: 1440px;
 }
 
 /* ── Nav ── */
@@ -51,6 +55,7 @@ body {
   text-transform: uppercase;
   color: #aaa;
   cursor: pointer;
+  
 }
 
 .nav__links {

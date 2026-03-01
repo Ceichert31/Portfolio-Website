@@ -3,6 +3,8 @@ import modulingsImage from "./../assets/Modulings.png";
 import dwarvenFortuneImage from "./../assets/DwarvenFortune.png";
 import loopifyImage from "./../assets/Loopify.png";
 import belowDeckImage from "./../assets/BelowDeck.png";
+import bananaGitImage from "./../assets/BananaGitThumbnail.png";
+import vulkanImage from "./../assets/VulkanThumbnail.png";
 
 export interface ProjectLink {
   label: string;
@@ -24,9 +26,7 @@ export const projects: Project[] = [
       id: 1,
       title: "Banana Git",
       images: [
-        "https://picsum.photos/800/500?random=1",
-        "https://picsum.photos/800/500?random=1.1",
-        "https://picsum.photos/800/500?random=1.2"
+        bananaGitImage
       ],
       shortDescription: "A Git client application",
       description: "Banana Git is a user-friendly Git client that simplifies version control workflows. Built with modern desktop technologies, it provides an intuitive interface for managing repositories, viewing diffs, and handling complex merge operations.",
@@ -39,9 +39,7 @@ export const projects: Project[] = [
       id: 2,
       title: "Vulkan Graphics Engine",
       images: [
-        "https://picsum.photos/800/500?random=2",
-        "https://picsum.photos/800/500?random=2.1",
-        "https://picsum.photos/800/500?random=2.2"
+        vulkanImage
       ],
       shortDescription: "A graphics rendering engine using Vulkan API",
       description: "A high-performance graphics engine built with Vulkan, featuring advanced rendering techniques and optimizations. Demonstrates low-level graphics programming, shader development, and performance optimization techniques.",
