@@ -181,7 +181,6 @@ body {
   background: rgba(255, 255, 255, 0.08);
 }
 
-/* ── Projects ── */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -227,7 +226,7 @@ body {
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: inherit;
 }
 
 .project-card__overlay {
