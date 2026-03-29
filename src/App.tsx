@@ -1,9 +1,14 @@
-import Portfolio from './Portfolio.tsx'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Portfolio from "./Portfolio";
+import ProjectPage from "./ProjectPage";
 
-function App() {
+export default function App() {
   return (
-     <Portfolio />
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Portfolio />} />
+        <Route path="/project/:slug" element={<ProjectPage />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
-
-export default App

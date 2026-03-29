@@ -1,23 +1,33 @@
 import { useState, useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import "./App.css";
-import { projects, games, type Project } from "././data/projectData.ts";
-import demoReel from "././assets/DayNightVisual.mp4";
+import { professional, personal, type Project } from "./data/projectData";
+import demoReel from "./assets/DayNightVisual.mp4";
 
 const NAV_LINKS = ["Projects", "About", "Contact", "Resume"];
 
-function NavBar({ activePage, setActivePage }: { activePage: string; setActivePage: (p: string) => void }) {
+/* ── NavBar ── */
+function NavBar({
+  activePage,
+  setActivePage,
+}: {
+  activePage: string;
+  setActivePage: (p: string) => void;
+}) {
   const [scrolled, setScrolled] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 20);
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    const onScroll = () => setScrolled(window.scrollY > 20);
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   const handleNavClick = (link: string) => {
     const lower = link.toLowerCase();
     if (lower === "projects" || lower === "about" || lower === "contact") {
       setActivePage("home");
+      navigate("/");
       setTimeout(() => {
         document.getElementById(lower)?.scrollIntoView({ behavior: "smooth" });
       }, 50);
@@ -30,7 +40,11 @@ function NavBar({ activePage, setActivePage }: { activePage: string; setActivePa
     <nav className={`nav ${!scrolled ? "nav--transparent" : ""}`}>
       <span
         className="nav__name"
-        onClick={() => { setActivePage("home"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+        onClick={() => {
+          setActivePage("home");
+          navigate("/");
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }}
       >
         Christopher Eichert
       </span>
@@ -50,13 +64,11 @@ function NavBar({ activePage, setActivePage }: { activePage: string; setActivePa
   );
 }
 
+/* ── Hero ── */
 function Hero() {
   return (
     <section id="hero" className="hero">
-      <div className="hero__video">
-        <span>Demo Reel</span>
-        <video src={demoReel} autoPlay loop muted />
-      </div>
+      <video className="hero__video" src={demoReel} autoPlay loop muted playsInline />
       <div className="hero__overlay" />
       <div className="hero__scroll-label">
         <span>Scroll</span>
@@ -66,9 +78,10 @@ function Hero() {
   );
 }
 
+/* ── Project Card ── */
 function ProjectCard({ project }: { project: Project }) {
   return (
-    <div className="project-card">
+    <Link to={`/project/${project.slug}`} className="project-card">
       <div className="project-card__thumb">
         {project.images[0] ? (
           <img src={project.images[0]} alt={project.title} className="project-card__img" />
@@ -76,42 +89,46 @@ function ProjectCard({ project }: { project: Project }) {
           <span className="project-card__thumb-label">Image</span>
         )}
         <div className="project-card__overlay">
-          <span></span>
+          <span className="project-card__overlay-label">View Project</span>
         </div>
       </div>
       <div className="project-card__info">
         <p className="project-card__title">{project.title}</p>
         <p className="project-card__desc">{project.shortDescription}</p>
         <div className="project-card__tags">
-          {project.tags.map((t) => <span key={t} className="tag">{t}</span>)}
+          {project.tags.map((t) => (
+            <span key={t} className="tag">{t}</span>
+          ))}
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
 
+/* ── Projects ── */
 function Projects() {
   return (
     <section id="projects" className="section">
       <div className="section__header">
-        <span>Projects</span>
+        <span>Professional Projects</span>
         <div className="section__line" />
       </div>
       <div className="projects-grid">
-        {projects.map((p) => <ProjectCard key={p.id} project={p} />)}
+        {professional.map((p) => <ProjectCard key={p.id} project={p} />)}
       </div>
 
       <div className="section__header" style={{ marginTop: "64px" }}>
-        <span>Games</span>
+        <span>Personal Projects</span>
         <div className="section__line" />
       </div>
       <div className="projects-grid">
-        {games.map((p) => <ProjectCard key={p.id} project={p} />)}
+        {personal.map((p) => <ProjectCard key={p.id} project={p} />)}
       </div>
     </section>
   );
 }
 
+/* ── About ── */
 function About() {
   return (
     <section id="about" className="section section--bordered">
@@ -121,7 +138,7 @@ function About() {
       </div>
       <div className="about-content">
         <p>
-          I am a Software and Game developer based out of Burlington, VT. 
+          I am a Software and Game developer based out of Burlington, VT.
           I work on all sorts of projects from graphics to software and am always down to learn something new!
         </p>
         <p>
@@ -134,12 +151,13 @@ function About() {
   );
 }
 
+/* ── Contact ── */
 function Contact() {
   const links = [
-    { label: "Email",  href: "mailto:ceichert3114@gmail.com", value: "ceichert3114@gmail.com" },
+    { label: "Email",    href: "mailto:ceichert3114@gmail.com",              value: "ceichert3114@gmail.com" },
     { label: "LinkedIn", href: "https://linkedin.com/in/christophereichert/", value: "Christopher Eichert" },
-    { label: "GitHub", href: "https://github.com/Ceichert31/", value: "Ceichert31" },
-    { label: "itch.io", href: "https://pineapple3114.itch.io/", value: "Pineapple3114" },
+    { label: "GitHub",   href: "https://github.com/Ceichert31/",             value: "Ceichert31" },
+    { label: "itch.io",  href: "https://pineapple3114.itch.io/",             value: "Pineapple3114" },
   ];
 
   return (
@@ -150,7 +168,7 @@ function Contact() {
       </div>
       <div className="contact-list">
         {links.map((l) => (
-          <a key={l.label} href={l.href}>
+          <a key={l.label} href={l.href} target="_blank" rel="noopener noreferrer">
             <span className="contact-list__label">{l.label}</span>
             <span>{l.value}</span>
           </a>
@@ -160,11 +178,15 @@ function Contact() {
   );
 }
 
+/* ── Resume ── */
 function Resume() {
   const experience = [
-    { role: "IoT Extraction Software Developer", company: "The Leahy Center for Digital Forensics & Cybersecurity", years: "2024 – Present" },
+    {
+      role: "IoT Extraction Software Developer",
+      company: "The Leahy Center for Digital Forensics & Cybersecurity",
+      years: "2024 – Present",
+    },
   ];
-
   const skills = ["Graphics Programming", ".NET", "C#", "C++", "Version Control", "Unity", "Vulkan"];
 
   return (
@@ -197,6 +219,7 @@ function Resume() {
   );
 }
 
+/* ── Portfolio home ── */
 export default function Portfolio() {
   const [activePage, setActivePage] = useState("home");
 
