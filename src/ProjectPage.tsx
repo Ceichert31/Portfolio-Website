@@ -67,7 +67,8 @@ export default function ProjectPage() {
       {/*Top of page*/}
       <div className="ppage__topbar">
         <button className="ppage__back" onClick={() => navigate(-1)}>
-          ← Back
+          <span style={{lineHeight: 1}}>←</span>
+          <span>Back</span>
         </button>
         <div className="ppage__counter">
           {activeImg + 1} / {project.images.length}
@@ -88,7 +89,11 @@ export default function ProjectPage() {
             ))}
           </div>
 
+          <h2 className="ppage__status">Description</h2>
           <p className="ppage__description">{project.description}</p>
+          
+          <h2 className="ppage__status">Role</h2>
+          <p className="ppage__description">{project.role}</p>
 
           {project.links.length > 0 && (
             <div className="ppage__links">

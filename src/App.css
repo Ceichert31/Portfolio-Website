@@ -444,6 +444,10 @@
     padding: 0;
     transition: color 0.2s;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    gap: 6px;
   }
 
   .ppage__back:hover {
@@ -508,9 +512,9 @@
   }
 
   .ppage__description {
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1.9;
-    color: #777;
+    color: #9d9d9d;
     margin-bottom: 32px;
     flex: 1;
   }
