@@ -6,7 +6,7 @@ import demoReel from "./assets/DayNightVisual.mp4";
 
 const NAV_LINKS = ["Projects", "About", "Contact", "Resume"];
 
-/* ── NavBar ── */
+/*Navigation Bar*/
 function NavBar({
   activePage,
   setActivePage,
@@ -64,7 +64,7 @@ function NavBar({
   );
 }
 
-/* ── Hero ── */
+/*Demo Reel/Hero*/
 function Hero() {
   return (
     <section id="hero" className="hero">
@@ -78,7 +78,7 @@ function Hero() {
   );
 }
 
-/* ── Project Card ── */
+/*Project Cards*/
 function ProjectCard({ project }: { project: Project }) {
   return (
     <Link to={`/project/${project.slug}`} className="project-card">
@@ -105,7 +105,7 @@ function ProjectCard({ project }: { project: Project }) {
   );
 }
 
-/* ── Projects ── */
+/*Projects*/
 function Projects() {
   return (
     <section id="projects" className="section">
@@ -128,7 +128,7 @@ function Projects() {
   );
 }
 
-/* ── About ── */
+/*About me*/
 function About() {
   return (
     <section id="about" className="section section--bordered">
@@ -138,20 +138,18 @@ function About() {
       </div>
       <div className="about-content">
         <p>
-          I am a Software and Game developer based out of Burlington, VT.
-          I work on all sorts of projects from graphics to software and am always down to learn something new!
+          Hi I'm Chris and I work in both Software and Game development.
+          I have been making games since I was 15, and it has always been a passion of mine.        
         </p>
-        <p>
-          I have a background in creating .NET desktop applications and creating games in Unity.
-          I enjoy all facets of game development, but my favorite thing to work with is graphics.
-        </p>
-        <p>Currently available for contracting and part-time opportunities.</p>
+        <p>Once I got to College, I started working at The Leahy Center for Digital Forensics and Cybersecurity, and there I discovered my love for Software Development. 
+          I enjoy learning new things and I love to explore different programming disciplines like Graphics, Physics, and VR. </p>
+        <p>I am currently available for contracting and part-time opportunities. Feel free to reach out!</p>
       </div>
     </section>
   );
 }
 
-/* ── Contact ── */
+/*Contact*/
 function Contact() {
   const links = [
     { label: "Email",    href: "mailto:ceichert3114@gmail.com",              value: "ceichert3114@gmail.com" },
@@ -178,7 +176,7 @@ function Contact() {
   );
 }
 
-/* ── Resume ── */
+/*Resume*/
 function Resume() {
   const experience = [
     {
@@ -219,7 +217,7 @@ function Resume() {
   );
 }
 
-/* ── Portfolio home ── */
+/*Portfolio home*/
 export default function Portfolio() {
   const [activePage, setActivePage] = useState("home");
 
