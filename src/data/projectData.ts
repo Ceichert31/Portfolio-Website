@@ -4,6 +4,7 @@ import loopifyImage from "./../assets/Loopify.png";
 import belowDeckImage from "./../assets/BelowDeck.png";
 import bananaGitImage from "./../assets/BananaGitThumbnail.png";
 import vulkanImage from "./../assets/VulkanThumbnail.png";
+import deathscalatorImage from "./../assets/DeathscalatorThumbnail.png";
 
 //Project status 'enum'
 const ProjectStatus = {
@@ -116,7 +117,7 @@ export const professional: Project[] = [
     title: "Deathscalator",
     status: 'COMPLETE',
     images: [
-      
+      deathscalatorImage
     ],
     shortDescription: "Clear out a contagous outbreak on an escalator",
     description:
