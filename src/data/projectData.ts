@@ -5,6 +5,7 @@ import belowDeckImage from "./../assets/BelowDeck.png";
 import bananaGitImage from "./../assets/BananaGitThumbnail.png";
 import vulkanImage from "./../assets/VulkanThumbnail.png";
 
+//Project status 'enum'
 const ProjectStatus = {
   InDevelopment: 'IN_DEVELOPMENT',
   OnHiatus: 'ON_HIATUS',
@@ -18,6 +19,7 @@ type StatusConfig = {
 
 type ProjectStatusValue = (typeof ProjectStatus)[keyof typeof ProjectStatus];
 
+//Map from enum to text and color strings
 const StatusMap: Record<ProjectStatusValue, StatusConfig> = {
   [ProjectStatus.InDevelopment]: {text: 'In Development', color: '#4c96e6'},
   [ProjectStatus.OnHiatus]: {text: 'On Hiatus', color: 'yellow'},

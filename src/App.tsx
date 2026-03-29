@@ -1,14 +1,30 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { ScrollRestoration, Outlet, createBrowserRouter, RouterProvider } from "react-router-dom";
 import Portfolio from "./Portfolio";
 import ProjectPage from "./ProjectPage";
 
+function Layout(){
+  return (
+    <>
+      <ScrollRestoration getKey={(location) => location.pathname} />
+      <Outlet/>
+    </>
+  );
+}
+
+const router = createBrowserRouter([
+  {
+    element: <Layout/>,
+    children: [
+      {path: "/", element: <Portfolio/>},
+      {path: "/project/:slug", element: <ProjectPage/>},
+    ],
+  },
+]);
+
 export default function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Portfolio />} />
-        <Route path="/project/:slug" element={<ProjectPage />} />
-      </Routes>
-    </BrowserRouter>
+    <>
+      <RouterProvider router={router}/>;
+    </>
   );
 }
