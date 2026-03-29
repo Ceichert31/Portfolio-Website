@@ -62,7 +62,7 @@ export const professional: Project[] = [
     shortDescription: "1st Place winner of Wolfjam 2024",
     description:
       "Modulings was made for Wolfjam 2024 with the theme Connections. We made the game as a team of 7 in 24 hours.",
-    role: "I Worked as a gameplay and systems programmer. I created a tutorial and projectile system.",
+    role: "I worked as a gameplay and systems programmer. I created a tutorial and projectile system.",
     tags: ["Action", "Arcade", "2D", "Game Jam"],
     links: [{ label: "Play on itch.io", url: "https://ceichert31.itch.io/modulings" }],
   },
