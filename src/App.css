@@ -585,6 +585,7 @@
   .ppage__gallery {
     display: flex;
     flex-direction: column;
+    gap: 6px;
     position: relative;
     z-index: 1;
     isolation: isolate;

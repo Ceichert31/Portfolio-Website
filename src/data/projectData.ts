@@ -1,10 +1,41 @@
-import modulingsImage from "./../assets/Modulings.png";
-import dwarvenFortuneImage from "./../assets/DwarvenFortune.png";
-import loopifyImage from "./../assets/Loopify.png";
-import belowDeckImage from "./../assets/BelowDeck.png";
-import bananaGitImage from "./../assets/BananaGitThumbnail.png";
+
+//#region Modulings Images
+import modulingsImage from "./../assets/Modulings/Modulings.png";
+import modulingsImage1 from "./../assets/Modulings/Modulings1.png";
+import modulingsImage2 from "./../assets/Modulings/Modulings2.png";
+import modulingsImage3 from "./../assets/Modulings/Modulings3.png";
+import modulingsImage4 from "./../assets/Modulings/Modulings4.png";
+import modulingsImage5 from "./../assets/Modulings/Modulings5.png";
+//#endregion
+
+//#region Dwarven Fortune Images
+import dwarvenFortuneImage from "./../assets/DwarvenFortune/DwarvenFortune.png";
+import dwarvenFortuneImage1 from "./../assets/DwarvenFortune/DwarvenFortune1.png";
+//#endregion
+
+//#region Below Deck Images
+import belowDeckImage from "./../assets/BelowDeck/BelowDeck.png";
+import belowDeckImage1 from "./../assets/BelowDeck/BelowDeck1.png";
+import belowDeckImage2 from "./../assets/BelowDeck/BelowDeck2.png";
+import belowDeckImage3 from "./../assets/BelowDeck/BelowDeck3.png";
+//#endregion
+
+//#region Deathscalator Images
+import deathscalatorImage from "./../assets/Deathscalator/DeathscalatorThumbnail.png";
+import deathscalatorImage1 from "./../assets/Deathscalator/Deathscalator1.png";
+import deathscalatorImage2 from "./../assets/Deathscalator/Deathscalator2.png";
+//#endregion
+
+//#region Loopify Images
+import loopifyImage from "./../assets/Loopify/Loopify.png";
+import loopifyImage1 from "./../assets/Loopify/Loopify1.png";
+import loopifyImage2 from "./../assets/Loopify/Loopify2.png";
+import loopifyImage3 from "./../assets/Loopify/Loopify3.png";
+import loopifyImage4 from "./../assets/Loopify/Loopify4.png";
+//#endregion
+import bananaGitImage from "./../assets/BananaGit/BananaGitThumbnail.png";
 import vulkanImage from "./../assets/VulkanThumbnail.png";
-import deathscalatorImage from "./../assets/DeathscalatorThumbnail.png";
+
 
 //Project status 'enum'
 const ProjectStatus = {
@@ -58,6 +89,11 @@ export const professional: Project[] = [
     status: 'COMPLETE',
     images: [
       modulingsImage,
+      modulingsImage1,
+      modulingsImage2,
+      modulingsImage3,
+      modulingsImage4,
+      modulingsImage5,
     ],
     shortDescription: "1st Place winner of Wolfjam 2024",
     description:
@@ -73,6 +109,9 @@ export const professional: Project[] = [
     status: 'COMPLETE',
     images: [
       belowDeckImage,
+      belowDeckImage1,
+      belowDeckImage2,
+      belowDeckImage3,
     ],
     shortDescription: "A horror stealth game",
     description:
@@ -87,7 +126,8 @@ export const professional: Project[] = [
     title: "Dwarven Fortune",
     status: 'COMPLETE',
     images: [
-      dwarvenFortuneImage
+      dwarvenFortuneImage,
+      dwarvenFortuneImage1
     ],
     shortDescription: "Collect ores to repair your dwarven drill!",
     description:
@@ -102,7 +142,11 @@ export const professional: Project[] = [
     title: "Loopify",
     status: 'COMPLETE',
     images: [
-      loopifyImage
+      loopifyImage,
+      loopifyImage1,
+      loopifyImage2,
+      loopifyImage3,
+      loopifyImage4,
     ],
     shortDescription: "Explore a magical MP3 player",
     description:
@@ -117,7 +161,9 @@ export const professional: Project[] = [
     title: "Deathscalator",
     status: 'COMPLETE',
     images: [
-      deathscalatorImage
+      deathscalatorImage,
+      deathscalatorImage1,
+      deathscalatorImage2,
     ],
     shortDescription: "Clear out a contagous outbreak on an escalator",
     description:
