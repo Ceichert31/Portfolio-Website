@@ -73,6 +73,7 @@ export interface Project {
   slug: string;
   title: string;
   status: ProjectStatusValue;
+  thumbnail: string,
   images: string[];
   shortDescription: string;
   description: string;
@@ -87,8 +88,8 @@ export const professional: Project[] = [
     slug: "modulings",
     title: "Modulings",
     status: 'COMPLETE',
+    thumbnail: modulingsImage,
     images: [
-      modulingsImage,
       modulingsImage1,
       modulingsImage2,
       modulingsImage3,
@@ -97,18 +98,18 @@ export const professional: Project[] = [
     ],
     shortDescription: "1st Place winner of Wolfjam 2024",
     description:
-      "Modulings was made for Wolfjam 2024 with the theme Connections. We made the game as a team of 7 in 24 hours.",
-    role: "I worked as a gameplay and systems programmer. I created a tutorial and projectile system.",
+      "Modulings was made for Wolfjam 2024 with the theme Connections. We made the game as a team of 7 in 26 hours. Modulings took first place out of 63 games, being noted as being: 'ready for a steam release'",
+    role: "I worked as a gameplay and systems programmer. I worked on a tutorial and projectile system, as well as many small gameplay elements. One of the big challenges we faced during this game jam was a size contraint. The game had to be under 35 megabytes in size, which required us to optimize many of our sound and art assets.  ",
     tags: ["Action", "Arcade", "2D", "Game Jam"],
-    links: [{ label: "Play on itch.io", url: "https://ceichert31.itch.io/modulings" }],
+    links: [{ label: "Play on itch.io", url: "https://ceichert31.itch.io/modulings" }, {label: "Article", url: "https://www.champlain.edu/blog/stories/guide-to-building-a-winning-game/"}],
   },
   {
     id: 2,
     slug: "below-deck",
     title: "Below Deck",
     status: 'COMPLETE',
+     thumbnail: belowDeckImage,
     images: [
-      belowDeckImage,
       belowDeckImage1,
       belowDeckImage2,
       belowDeckImage3,
@@ -125,8 +126,8 @@ export const professional: Project[] = [
     slug: "dwarven-fortune",
     title: "Dwarven Fortune",
     status: 'COMPLETE',
+     thumbnail: dwarvenFortuneImage,
     images: [
-      dwarvenFortuneImage,
       dwarvenFortuneImage1
     ],
     shortDescription: "Collect ores to repair your dwarven drill!",
@@ -141,8 +142,8 @@ export const professional: Project[] = [
     slug: "loopify",
     title: "Loopify",
     status: 'COMPLETE',
+    thumbnail: loopifyImage,
     images: [
-      loopifyImage,
       loopifyImage1,
       loopifyImage2,
       loopifyImage3,
@@ -160,8 +161,8 @@ export const professional: Project[] = [
     slug: "deathscalator",
     title: "Deathscalator",
     status: 'COMPLETE',
+    thumbnail: deathscalatorImage,
     images: [
-      deathscalatorImage,
       deathscalatorImage1,
       deathscalatorImage2,
     ],
@@ -180,6 +181,7 @@ export const personal: Project[] = [
     slug: "banana-git",
     title: "Banana Git",
     status: 'IN_DEVELOPMENT',
+    thumbnail: bananaGitImage,
     images: [
       bananaGitImage
     ],
@@ -197,6 +199,7 @@ export const personal: Project[] = [
     slug: "vulkan-graphics-engine",
     title: "Vulkan Graphics Engine",
     status: 'ON_HIATUS',
+    thumbnail: vulkanImage,
     images: [
       vulkanImage
     ],

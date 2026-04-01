@@ -65,15 +65,12 @@ export default function ProjectPage() {
       </div>
 
       {/*Top of page*/}
-      <div className="ppage__topbar">
+      <nav className="nav">
         <button className="ppage__back" onClick={() => navigate(-1)}>
           <span style={{lineHeight: 1}}>←</span>
           <span>Back</span>
         </button>
-        <div className="ppage__counter">
-          {activeImg + 1} / {project.images.length}
-        </div>
-      </div>
+      </nav>
 
       {/*Info panel and image gallery*/}
       <div className="ppage__body">
@@ -116,7 +113,7 @@ export default function ProjectPage() {
             {project.images.map((src, i) => (
               <button
                 key={i}
-                className={`ppage__thumb ${i === activeImg ? "ppage__thumb--active" : ""}`}
+                className={`ppage__thumb ${i === activeImg ? "ppage__thumb" : ""}`}
                 onClick={() => scrollToImage(i)}
                 aria-label={`View image ${i + 1}`}
               >

@@ -83,8 +83,8 @@ function ProjectCard({ project }: { project: Project }) {
   return (
     <Link to={`/project/${project.slug}`} className="project-card">
       <div className="project-card__thumb">
-        {project.images[0] ? (
-          <img src={project.images[0]} alt={project.title} className="project-card__img" />
+        {project.thumbnail ? (
+          <img src={project.thumbnail} alt={project.title} className="project-card__img" />
         ) : (
           <span className="project-card__thumb-label">Image</span>
         )}
