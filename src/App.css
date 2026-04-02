@@ -281,7 +281,7 @@
     color: #555;
     border: 1px solid #333;
     padding: 3px 8px;
-    border-radius: 2px;
+    border-radius: 2px; 
   }
 }
 
@@ -332,6 +332,8 @@
 @layer resume {
   .resume-content {
     max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
   }
 
   .resume-section-title {
@@ -348,6 +350,7 @@
     align-items: baseline;
     padding: 16px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    text-align: left;
   }
 
   .resume-entry__role {
@@ -371,7 +374,25 @@
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
+    align-items: center;
   }
+
+  .resume-download {
+  display: inline-block;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #999;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 12px 20px;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.resume-download:hover {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.4);
+}
 }
 
 @layer footer {

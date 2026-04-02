@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import "./App.css";
 import { professional, personal, type Project } from "./data/projectData";
 import demoReel from "./assets/DayNightVisual.mp4";
+import resumePDF from "./assets/Christopher_Eichert_Resume.pdf";
 
 const NAV_LINKS = ["Projects", "About", "Contact", "Resume"];
 
@@ -185,9 +186,9 @@ function Resume() {
       years: "2024 – Present",
     },
   ];
-  const skills = ["Graphics Programming", ".NET", "C#", "C++", "Version Control", "Unity", "Vulkan"];
+  const skills = ["WPF", ".NET", "C#", "Version Control"];
 
-  return (
+   return (
     <div className="section" style={{ paddingTop: "100px" }}>
       <div className="section__header">
         <span>Resume</span>
@@ -206,12 +207,15 @@ function Resume() {
             </div>
           ))}
         </div>
-        <div>
+        <div style={{ marginBottom: "48px" }}>
           <p className="resume-section-title">Skills</p>
           <div className="resume-skills">
             {skills.map((s) => <span key={s} className="tag">{s}</span>)}
           </div>
         </div>
+        <a href={resumePDF} target="_blank" rel="noopener noreferrer" className="resume-download">
+          View Full Resume →
+        </a>
       </div>
     </div>
   );
