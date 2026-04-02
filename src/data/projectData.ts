@@ -1,23 +1,27 @@
 
 //#region Modulings Images
 import modulingsImage from "./../assets/Modulings/Modulings.png";
-import modulingsImage1 from "./../assets/Modulings/Modulings1.png";
-import modulingsImage2 from "./../assets/Modulings/Modulings2.png";
-import modulingsImage3 from "./../assets/Modulings/Modulings3.png";
-import modulingsImage4 from "./../assets/Modulings/Modulings4.png";
-import modulingsImage5 from "./../assets/Modulings/Modulings5.png";
+import modulingsImage1 from "./../assets/Modulings/ModulingsIntro.gif";
+import modulingsImage2 from "./../assets/Modulings/Modulings2.jpg";
+import modulingsImage3 from "./../assets/Modulings/ModulingsShoot.gif";
+import modulingsImage4 from "./../assets/Modulings/ModulingsAdd.gif";
+import modulingsImage5 from "./../assets/Modulings/ModulingsDie.gif";
 //#endregion
 
 //#region Dwarven Fortune Images
-import dwarvenFortuneImage from "./../assets/DwarvenFortune/DwarvenFortune.png";
-import dwarvenFortuneImage1 from "./../assets/DwarvenFortune/DwarvenFortune1.png";
+import dwarvenFortuneThumbnail from "./../assets/DwarvenFortune/DwarvenFortune.png";
+import dwarvenFortuneImage from "./../assets/DwarvenFortune/Dwarven1.gif";
+import dwarvenFortuneImage1 from "./../assets/DwarvenFortune/Dwarven2.gif";
+import dwarvenFortuneImage2 from "./../assets/DwarvenFortune/Dwarven3.gif";
+import dwarvenFortuneImage3 from "./../assets/DwarvenFortune/Dwarven4.gif";
+import dwarvenFortuneImage4 from "./../assets/DwarvenFortune/Dwarven5.gif";
 //#endregion
 
 //#region Below Deck Images
 import belowDeckImage from "./../assets/BelowDeck/BelowDeck.png";
-import belowDeckImage1 from "./../assets/BelowDeck/BelowDeck1.png";
-import belowDeckImage2 from "./../assets/BelowDeck/BelowDeck2.png";
-import belowDeckImage3 from "./../assets/BelowDeck/BelowDeck3.png";
+import belowDeckImage1 from "./../assets/BelowDeck/BelowDeckIdle.gif";
+import belowDeckImage2 from "./../assets/BelowDeck/BelowDeckLight.gif";
+import belowDeckImage3 from "./../assets/BelowDeck/BelowDeckDie.gif";
 //#endregion
 
 //#region Deathscalator Images
@@ -33,7 +37,10 @@ import loopifyImage2 from "./../assets/Loopify/Loopify2.png";
 import loopifyImage3 from "./../assets/Loopify/Loopify3.png";
 import loopifyImage4 from "./../assets/Loopify/Loopify4.png";
 //#endregion
+
 import bananaGitImage from "./../assets/BananaGit/BananaGitThumbnail.png";
+import bananaGitGif from "./../assets/BananaGit/BananaGitGif.gif";
+
 import vulkanImage from "./../assets/VulkanThumbnail.png";
 
 
@@ -114,10 +121,10 @@ export const professional: Project[] = [
       belowDeckImage2,
       belowDeckImage3,
     ],
-    shortDescription: "A horror stealth game",
+    shortDescription: "Sneak around a hijacked cargo ship!",
     description:
       "Below Deck was made for a 10-day game jam with the theme cult. The game focuses around a player who must sneak past cultists that overtook the cargo ship they work on.",
-    role: "I focused on implementing post processing effects like dithering as well as creating systems for the monster to detect the player by sound. ",
+    role: "I focused on implementing post processing effects like dithering as well as creating systems for the monster to detect the player by sound. A big challenge we ran into was lighting. We had so many lights we were hitting the max of what our shadow atlas could hold! I ended up fixing this by using Unity's Level of detail component, that disabled lights that were far away from the player. ",
       tags: ["Horror", "Stealth", "PSX", "Game Jam"],
     links: [{ label: "Play on itch.io", url: "https://pineapple3114.itch.io/below-deck" }],
   },
@@ -126,14 +133,17 @@ export const professional: Project[] = [
     slug: "dwarven-fortune",
     title: "Dwarven Fortune",
     status: 'COMPLETE',
-     thumbnail: dwarvenFortuneImage,
+     thumbnail: dwarvenFortuneThumbnail,
     images: [
-      dwarvenFortuneImage1
+      dwarvenFortuneImage1,
+      dwarvenFortuneImage2,
+      dwarvenFortuneImage3,
+      dwarvenFortuneImage4,
     ],
     shortDescription: "Collect ores to repair your dwarven drill!",
     description:
       "Dwarven Fortune takes you into the depths of the caves drilling towards the rumored golden city. Fight cave wildlife and collect ores to repair your drill to make it to the rumored city.",
-    role: "I worked as a systems programmer and gameplay programmer, mainly creating a saving system, a stats system, and player interactions with the world",
+    role: "I worked as a systems programmer and gameplay programmer, mainly creating a saving system, a stats system, and player interactions with the world. I also created the dynamic biome-shifting system with each biome having its own post processing effects and music.",
     tags: ["Action", "2D", "Game Jam"],
     links: [{ label: "Play on itch.io", url: "https://canik.itch.io/dwarvenfortune" }],
   },
@@ -144,7 +154,6 @@ export const professional: Project[] = [
     status: 'COMPLETE',
     thumbnail: loopifyImage,
     images: [
-      loopifyImage1,
       loopifyImage2,
       loopifyImage3,
       loopifyImage4,
@@ -170,7 +179,7 @@ export const professional: Project[] = [
     description:
       "Deathscalator was a 4-week student project where I worked in a team of 6. The game is an arcade-style game where you fight off enemies while descending down an escalator.",
     role: "I worked as the sole programmer on this team, and my main focuses were on implement gameplay and systems, like the ability system and enemy spawning systems.",
-    tags: ["Action", "Arcade", "Game Jam"],
+    tags: ["Action", "Arcade"],
     links: [{ label: "Play on itch.io", url: "https://pineapple3114.itch.io/deathscalator" }],
   },
 ];
@@ -183,7 +192,7 @@ export const personal: Project[] = [
     status: 'IN_DEVELOPMENT',
     thumbnail: bananaGitImage,
     images: [
-      bananaGitImage
+      bananaGitGif,
     ],
     shortDescription: "A version control user interface",
     description:
