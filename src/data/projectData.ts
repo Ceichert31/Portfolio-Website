@@ -10,7 +10,6 @@ import modulingsImage5 from "./../assets/Modulings/ModulingsDie.gif";
 
 //#region Dwarven Fortune Images
 import dwarvenFortuneThumbnail from "./../assets/DwarvenFortune/DwarvenFortune.png";
-import dwarvenFortuneImage from "./../assets/DwarvenFortune/Dwarven1.gif";
 import dwarvenFortuneImage1 from "./../assets/DwarvenFortune/Dwarven2.gif";
 import dwarvenFortuneImage2 from "./../assets/DwarvenFortune/Dwarven3.gif";
 import dwarvenFortuneImage3 from "./../assets/DwarvenFortune/Dwarven4.gif";
@@ -32,10 +31,22 @@ import deathscalatorImage2 from "./../assets/Deathscalator/Deathscalator2.png";
 
 //#region Loopify Images
 import loopifyImage from "./../assets/Loopify/Loopify.png";
-import loopifyImage1 from "./../assets/Loopify/Loopify1.png";
 import loopifyImage2 from "./../assets/Loopify/Loopify2.png";
 import loopifyImage3 from "./../assets/Loopify/Loopify3.png";
 import loopifyImage4 from "./../assets/Loopify/Loopify4.png";
+//#endregion
+
+//#region Final Catch Images
+import finalCatchThumbnail from "./../assets/FinalCatch/FinalCatchThumbnail.png";
+import finalCatchGif from "./../assets/FinalCatch/FinalCatchIntro.gif";
+import finalCatchGif2 from "./../assets/FinalCatch/FinalCatch3.gif";
+import finalCatchGif3 from "./../assets/FinalCatch/FinalCatch4.gif";
+import finalCatchGif4 from "./../assets/FinalCatch/FinalCatch5.gif";
+import finalCatchGif5 from "./../assets/FinalCatch/FinalCatch6.gif";
+//#endregion
+
+//#region Endure Images
+
 //#endregion
 
 import bananaGitImage from "./../assets/BananaGit/BananaGitThumbnail.png";
@@ -185,7 +196,29 @@ export const professional: Project[] = [
 ];
 
 export const personal: Project[] = [
-{
+  {
+    id: 8,
+    slug: "final-catch",
+    title: "Final Catch",
+    status: 'ON_HIATUS',
+    thumbnail: finalCatchThumbnail,
+    images: [
+      finalCatchGif,
+      finalCatchGif2,
+      finalCatchGif3,
+      finalCatchGif4,
+      finalCatchGif5,
+    ],
+    shortDescription: "A game about fighting big fish",
+    description:
+      "Final catch started with a premise, what if fishing minigames were more intense. ",
+    role: "I've done a little bit of everything working on Final Catch. I've done a lot of Graphics programming, making multiple shaders.",
+      tags: ["Action", "Fishing", "Unity"],
+    links: [
+      { label: "GitHub Repository", url: "https://github.com/Ceichert31/Final-Catch" },
+    ],
+  },
+  {
     id: 6,
     slug: "banana-git",
     title: "Banana Git",
