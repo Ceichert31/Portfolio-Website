@@ -12,6 +12,16 @@ export default function ProjectPage() {
   const imageRefs = useRef<(HTMLDivElement | null)[]>([]);
   const galleryRef = useRef<HTMLDivElement>(null);
 
+  //Handles whether to go back one, or go back to root
+  const handleBack = () => {
+    if (window.history.state?.idx > 0){
+      navigate(-1);
+    }
+    else{
+      navigate("/");
+    }
+};
+
   //Update active thumbnail
   useEffect(() => {
     const gallery = galleryRef.current;
@@ -43,7 +53,7 @@ export default function ProjectPage() {
     return (
       <div className="ppage__not-found">
         <p>Project not found.</p>
-        <button onClick={() => navigate("/")} className="ppage__back">
+        <button onClick={handleBack} className="ppage__back">
           ← Back to Portfolio
         </button>
       </div>
@@ -66,7 +76,7 @@ export default function ProjectPage() {
 
       {/*Top of page*/}
       <nav className="nav">
-        <button className="ppage__back" onClick={() => navigate(-1)}>
+        <button className="ppage__back" onClick={handleBack}>
           <span style={{lineHeight: 1}}>←</span>
           <span>Back</span>
         </button>
