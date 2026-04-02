@@ -46,7 +46,11 @@ import finalCatchGif5 from "./../assets/FinalCatch/FinalCatch6.gif";
 //#endregion
 
 //#region Endure Images
-
+import endureThumbnail from "./../assets/Endure/EndureThumbnail.png";
+import endureImage1 from "./../assets/Endure/EndureLifeboat.png";
+import endureImage2 from "./../assets/Endure/EndureDen.png";
+import endureImage3 from "./../assets/Endure/EndureMoon.png";
+import endureImage4 from "./../assets/Endure/EndureDaisy.png";
 //#endregion
 
 import bananaGitImage from "./../assets/BananaGit/BananaGitThumbnail.png";
@@ -102,6 +106,25 @@ export interface Project {
 
 export const professional: Project[] = [
    {
+    id: 9,
+    slug: "endure",
+    title: "Endure",
+    status: 'IN_DEVELOPMENT',
+    thumbnail: endureThumbnail,
+    images: [
+      endureImage1,
+      endureImage2,
+      endureImage3,
+      endureImage4,
+    ],
+    shortDescription: "Based on the true story of the Endurance expedition",
+    description:
+      "Endure is a survival horror game based on the Endurance expedition. You play as someone stranded after a crash, and you must repair a lifeboat to escape an icesheet. However, you are not alone.",
+    role: "I am working on endure as a Graphics and Gameplay programmer. This is my first project working in Unity HDRP, and I've hit many roadblocks with performance. Some optimizations I've made include disabling certain render features like Global Screen Space Illumination and utilizing Unity's Screen API to pixelate the screen.",
+    tags: ["Horror", "Survival", "PSX", "Arctic"],
+    links: [],
+  },
+  {
     id: 1,
     slug: "modulings",
     title: "Modulings",
