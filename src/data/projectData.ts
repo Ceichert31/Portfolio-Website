@@ -51,6 +51,7 @@ import endureImage1 from "./../assets/Endure/EndureLifeboat.png";
 import endureImage2 from "./../assets/Endure/EndureDen.png";
 import endureImage3 from "./../assets/Endure/EndureMoon.png";
 import endureImage4 from "./../assets/Endure/EndureDaisy.png";
+import endureGif1 from "./../assets/Endure/DaisyRoar.gif";
 //#endregion
 
 import bananaGitImage from "./../assets/BananaGit/BananaGitThumbnail.png";
@@ -116,11 +117,12 @@ export const professional: Project[] = [
       endureImage2,
       endureImage3,
       endureImage4,
+      endureGif1,
     ],
     shortDescription: "Based on the true story of the Endurance expedition",
     description:
       "Endure is a survival horror game based on the Endurance expedition. You play as someone stranded after a crash, and you must repair a lifeboat to escape an icesheet. However, you are not alone.",
-    role: "I am working on endure as a Graphics and Gameplay programmer. This is my first project working in Unity HDRP, and I've hit many roadblocks with performance. Some optimizations I've made include disabling certain render features like Global Screen Space Illumination and utilizing Unity's Screen API to pixelate the screen.",
+    role: "I am working on endure as a Lead Graphics and Gameplay programmer. This is my first project working in Unity HDRP, and I've hit many roadblocks with performance. Some optimizations I've made include disabling certain render features like Global Screen Space Illumination and utilizing Unity's Screen API to pixelate the screen. Additionally, I've gotten to work more with Unity's rig builder system, and have made some cool procedural animations.",
     tags: ["Horror", "Survival", "PSX", "Arctic"],
     links: [],
   },
@@ -195,7 +197,7 @@ export const professional: Project[] = [
     shortDescription: "Explore a magical MP3 player",
     description:
       "Loop through songs to find albumn covers to escape this magical MP3 player.",
-    role: "I worked as a Gameplay programmer, implementing all the functionallity for the MP3 player and the song swapping mechanic",
+    role: "I worked as a Gameplay programmer, implementing all the functionallity for the MP3 player and the song swapping mechanic. I had a lot of fun making the MP3 player interactable and adding gamefeel with packages like DOTween and Easy Text Effects.",
     tags: ["Platforming", "Time Loop", "Game Jam"],
     links: [{ label: "Play on itch.io", url: "https://hoxfire.itch.io/loopify" }],
   },
@@ -212,7 +214,7 @@ export const professional: Project[] = [
     shortDescription: "Clear out a contagous outbreak on an escalator",
     description:
       "Deathscalator was a 4-week student project where I worked in a team of 6. The game is an arcade-style game where you fight off enemies while descending down an escalator.",
-    role: "I worked as the sole programmer on this team, and my main focuses were on implement gameplay and systems, like the ability system and enemy spawning systems.",
+    role: "I worked as the sole programmer on this team, and my main focuses were on implement gameplay and systems, like the ability system and enemy spawning systems. One of my proudest accomplishments on this project was a blood splatter system that utilized object-pooling to spawn blood decals and fade them out.",
     tags: ["Action", "Arcade"],
     links: [{ label: "Play on itch.io", url: "https://pineapple3114.itch.io/deathscalator" }],
   },
