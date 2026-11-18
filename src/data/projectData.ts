@@ -54,6 +54,14 @@ import endureImage4 from "./../assets/Endure/EndureDaisy.png";
 import endureGif1 from "./../assets/Endure/DaisyRoar.gif";
 //#endregion
 
+//#region Insectotec Images
+
+import insectotecThumbnail from "./../assets/Insectotec/insectotec_thumbnail.png";
+import insectotecImage1 from "./../assets/Insectotec/insectotec_image_1.png";
+import insectotecImage2 from "./../assets/Insectotec/insectotec_image_2.png";
+import insectotecImage3 from "./../assets/Insectotec/insectotec_image_3.png";
+//#endregion
+
 import bananaGitImage from "./../assets/BananaGit/BananaGitThumbnail.png";
 import bananaGitGif from "./../assets/BananaGit/BananaGitGif.gif";
 
@@ -106,6 +114,24 @@ export interface Project {
 }
 
 export const professional: Project[] = [
+  {
+    id: 10,
+    slug: "insectotec",
+    title: "Insectotec",
+    status: 'IN_DEVELOPMENT',
+    thumbnail: insectotecThumbnail,
+    images: [
+      insectotecImage1,
+      insectotecImage2,
+      insectotecImage3,
+    ],
+    shortDescription: "A game about collecting goo filled bugs!",
+    description:
+      "You are a debugger entering a giant megastructure. You must collect goo-sucking bugs and remove them.",
+    role: "I've worked on Insectotec as a Systems programmer. I created modular enemy and level-loading systems to connect large environment scenes. Loading large asset filled scenes quickly was a challenge, but with some smart tricks like preloading I was able to cut down loading times significantly!",
+    tags: ["Movement", "Roguelike", "Quota", "Action"],
+    links: [{label: "Play on Itch!", url:"https://graggletoothgames.itch.io/insectotec"}, {label: "Trailer", url: "https://www.youtube.com/watch?v=LfDsPS73aSE"}],
+  },
    {
     id: 9,
     slug: "endure",
