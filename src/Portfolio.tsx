@@ -139,11 +139,11 @@ function About() {
       </div>
       <div className="about-content">
         <p>
-          Hi I'm Chris and I work in both Software and Game development.
-          I have been making games since I was 15, and it has always been a passion of mine.        
+          Hi I'm Chris and I work professionally in both Software and Game development.
+          I have been making games since 2020, and I've participated in over 10 game jams!        
         </p>
         <p>Once I got to College, I started working at The Leahy Center for Digital Forensics and Cybersecurity, and there I discovered my love for Software Development. 
-          I enjoy learning new things and I love to explore different programming disciplines like Graphics, Physics, and VR. </p>
+          I enjoy learning new things and I love to explore different programming disciplines like: Systems, Graphics, Physics, and VR. </p>
         <p>I am currently available for contracting and part-time opportunities. Feel free to reach out!</p>
       </div>
     </section>
@@ -181,12 +181,22 @@ function Contact() {
 function Resume() {
   const experience = [
     {
+      role: "IoT Extraction Team Lead",
+      company: "The Leahy Center for Digital Forensics & Cybersecurity",
+      years: "July 2026 – Present",
+    },
+    {
       role: "IoT Extraction Software Developer",
       company: "The Leahy Center for Digital Forensics & Cybersecurity",
-      years: "2024 – Present",
+      years: "September 2024 – July 2026",
+    },
+    {
+      role: "IoT Extraction Intern",
+      company: "The Leahy Center for Digital Forensics & Cybersecurity",
+      years: "February 2024 – May 2024",
     },
   ];
-  const skills = ["WPF", ".NET", "C#", "Version Control"];
+  const skills = ["WPF", ".NET", "C#", "Version Control", "ASP.NET", "Java", "Spring Boot", "MVVM", "C++", "GDScript"];
 
    return (
     <div className="section" style={{ paddingTop: "100px" }}>
