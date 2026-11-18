@@ -213,28 +213,6 @@ export const professional: Project[] = [
 
 export const personal: Project[] = [
   {
-    id: 8,
-    slug: "final-catch",
-    title: "Final Catch",
-    status: 'ON_HIATUS',
-    thumbnail: finalCatchThumbnail,
-    images: [
-      finalCatchGif,
-      finalCatchGif2,
-      finalCatchGif3,
-      finalCatchGif4,
-      finalCatchGif5,
-    ],
-    shortDescription: "A game about fighting big fish",
-    description:
-      "Final catch started with a premise, what if fishing minigames were more intense. ",
-    role: "I've done a little bit of everything working on Final Catch. I've done a lot of Graphics programming, making multiple shaders.",
-      tags: ["Action", "Fishing", "Unity"],
-    links: [
-      { label: "GitHub Repository", url: "https://github.com/Ceichert31/Final-Catch" },
-    ],
-  },
-  {
     id: 6,
     slug: "banana-git",
     title: "Banana Git",
