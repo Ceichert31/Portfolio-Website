@@ -23,28 +23,6 @@ import belowDeckImage2 from "./../assets/BelowDeck/BelowDeckLight.gif";
 import belowDeckImage3 from "./../assets/BelowDeck/BelowDeckDie.gif";
 //#endregion
 
-//#region Deathscalator Images
-import deathscalatorImage from "./../assets/Deathscalator/DeathscalatorThumbnail.png";
-import deathscalatorImage1 from "./../assets/Deathscalator/Deathscalator1.png";
-import deathscalatorImage2 from "./../assets/Deathscalator/Deathscalator2.png";
-//#endregion
-
-//#region Loopify Images
-import loopifyImage from "./../assets/Loopify/Loopify.png";
-import loopifyImage2 from "./../assets/Loopify/Loopify2.png";
-import loopifyImage3 from "./../assets/Loopify/Loopify3.png";
-import loopifyImage4 from "./../assets/Loopify/Loopify4.png";
-//#endregion
-
-//#region Final Catch Images
-import finalCatchThumbnail from "./../assets/FinalCatch/FinalCatchThumbnail.png";
-import finalCatchGif from "./../assets/FinalCatch/FinalCatchIntro.gif";
-import finalCatchGif2 from "./../assets/FinalCatch/FinalCatch3.gif";
-import finalCatchGif3 from "./../assets/FinalCatch/FinalCatch4.gif";
-import finalCatchGif4 from "./../assets/FinalCatch/FinalCatch5.gif";
-import finalCatchGif5 from "./../assets/FinalCatch/FinalCatch6.gif";
-//#endregion
-
 //#region Endure Images
 import endureThumbnail from "./../assets/Endure/EndureThumbnail.png";
 import endureImage1 from "./../assets/Endure/EndureLifeboat.png";

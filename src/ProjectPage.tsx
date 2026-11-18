@@ -111,7 +111,7 @@ export default function ProjectPage() {
                   rel="noopener noreferrer"
                   className="ppage__link"
                 >
-                  {l.label} →
+                  {l.label}
                 </a>
               ))}
             </div>
