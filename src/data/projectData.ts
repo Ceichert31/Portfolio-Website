@@ -209,41 +209,6 @@ export const professional: Project[] = [
     tags: ["Action", "2D", "Game Jam"],
     links: [{ label: "Play on itch.io", url: "https://canik.itch.io/dwarvenfortune" }],
   },
-  {
-    id: 4,
-    slug: "loopify",
-    title: "Loopify",
-    status: 'COMPLETE',
-    thumbnail: loopifyImage,
-    images: [
-      loopifyImage2,
-      loopifyImage3,
-      loopifyImage4,
-    ],
-    shortDescription: "Explore a magical MP3 player",
-    description:
-      "Loop through songs to find albumn covers to escape this magical MP3 player.",
-    role: "I worked as a Gameplay programmer, implementing all the functionallity for the MP3 player and the song swapping mechanic. I had a lot of fun making the MP3 player interactable and adding gamefeel with packages like DOTween and Easy Text Effects.",
-    tags: ["Platforming", "Time Loop", "Game Jam"],
-    links: [{ label: "Play on itch.io", url: "https://hoxfire.itch.io/loopify" }],
-  },
-    {
-    id: 5,
-    slug: "deathscalator",
-    title: "Deathscalator",
-    status: 'COMPLETE',
-    thumbnail: deathscalatorImage,
-    images: [
-      deathscalatorImage1,
-      deathscalatorImage2,
-    ],
-    shortDescription: "Clear out a contagous outbreak on an escalator",
-    description:
-      "Deathscalator was a 4-week student project where I worked in a team of 6. The game is an arcade-style game where you fight off enemies while descending down an escalator.",
-    role: "I worked as the sole programmer on this team, and my main focuses were on implement gameplay and systems, like the ability system and enemy spawning systems. One of my proudest accomplishments on this project was a blood splatter system that utilized object-pooling to spawn blood decals and fade them out.",
-    tags: ["Action", "Arcade"],
-    links: [{ label: "Play on itch.io", url: "https://pineapple3114.itch.io/deathscalator" }],
-  },
 ];
 
 export const personal: Project[] = [
