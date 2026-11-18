@@ -54,7 +54,7 @@ export default function ProjectPage() {
       <div className="ppage__not-found">
         <p>Project not found.</p>
         <button onClick={handleBack} className="ppage__back">
-          ← Back to Portfolio
+          Back to Portfolio
         </button>
       </div>
     );

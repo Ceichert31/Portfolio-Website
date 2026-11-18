@@ -62,8 +62,12 @@ import insectotecImage2 from "./../assets/Insectotec/insectotec_image_2.png";
 import insectotecImage3 from "./../assets/Insectotec/insectotec_image_3.png";
 //#endregion
 
-import bananaGitImage from "./../assets/BananaGit/BananaGitThumbnail.png";
-import bananaGitGif from "./../assets/BananaGit/BananaGitGif.gif";
+//#region BananaGit Images
+import bananaGitThumbnail from "./../assets/BananaGit/BananaGitThumbnail.png";
+import bananaGitImage1 from "./../assets/BananaGit/BananaGit_1.png";
+import bananaGitImage2 from "./../assets/BananaGit/BananaGit_2.png";
+import bananaGitImage3 from "./../assets/BananaGit/BananaGit_3.png";
+//#endregion
 
 import vulkanImage from "./../assets/VulkanThumbnail.png";
 
@@ -216,10 +220,12 @@ export const personal: Project[] = [
     id: 6,
     slug: "banana-git",
     title: "Banana Git",
-    status: 'IN_DEVELOPMENT',
-    thumbnail: bananaGitImage,
+    status: 'ON_HIATUS',
+    thumbnail: bananaGitThumbnail,
     images: [
-      bananaGitGif,
+      bananaGitImage1,
+      bananaGitImage2,
+      bananaGitImage3
     ],
     shortDescription: "A version control user interface",
     description:
@@ -228,6 +234,7 @@ export const personal: Project[] = [
       tags: ["Software", ".NET", "Git"],
     links: [
       { label: "GitHub Repository", url: "https://github.com/Ceichert31/BananaGit" },
+      { label: "Releases", url: "https://github.com/Ceichert31/BananaGit/releases"}
     ],
   },
   {

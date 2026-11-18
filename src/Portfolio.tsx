@@ -224,7 +224,7 @@ function Resume() {
           </div>
         </div>
         <a href={resumePDF} target="_blank" rel="noopener noreferrer" className="resume-download">
-          View Full Resume →
+          View Full Resume
         </a>
       </div>
     </div>
