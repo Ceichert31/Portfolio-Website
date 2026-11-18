@@ -77,7 +77,6 @@ export default function ProjectPage() {
       {/*Top of page*/}
       <nav className="nav">
         <button className="ppage__back" onClick={handleBack}>
-          <span style={{lineHeight: 1}}>←</span>
           <span>Back</span>
         </button>
       </nav>
